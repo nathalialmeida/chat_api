@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="form">
+      <div class="boxtext">
+        <div class="boxtext">
+          <label>Origem:</label>
+          <input
+          type="text"
+          name="mensagem"
+          id="origem"
+          placeholder="Remetente"
+          required/>
+        </div>
+        
+        <div class="boxtext"  id="destino">
+          <label>Destino:</label>
+          <div class="select" id="exibir">
+
+          </div>
+          <!--<input
+          type="text"
+          name="destino"
+          id="destino"
+          placeholder="Destinatário"
+          required
+          /> -->
+        </div>
+        
+        <div class="box" id="mostrar"></div>
+        
+        <div id="boxMensagem">
+            <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Mensagem"
+            rows="4"
+            cols="47"
+            ></textarea>
+        </div>
+        
+        <div class="button">
+            <input type="button" id="enviar1" value="Enviar" onclick="enviar()"/>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
